@@ -1,0 +1,48 @@
+en: 
+  welcome: "Welcome to Calculator!"
+  enter_name: "Please enter your name:"
+  valid_name: "Invalid response. Please enter your name:"
+  select_operands: "Select Operands"
+  first_number: "Enter the first number:"
+  second_number: "Enter the second number:"
+  valid_number: "Wrong! Enter a valid number."
+  select_operator: "Select Operator"
+  valid_operator: "Invalid choice. Please select a valid operator."
+  results: "Results"
+  calculate_again: "Perform another calculation? (Y to calculate again)"
+  goodbye: "Thanks for using Calculator! Goodbye."
+  adding: "Adding the two numbers..."
+  subtracting: "Subtracting the two numbers..."
+  multiplying: "Multiplying the two numbers..."
+  dividing: "Dividing the two numbers..."
+  operator_prompt: "What operation would you like to perform?
+   \n1) Add
+   \n2) Subtract
+   \n3) Multiply
+   \n4) Divide"
+  calculation_result: "The result is"
+
+es: 
+  welcome: "¡Bienvenido a Calculadora!"
+  enter_name: "Por favor, introduzca su nombre"
+  valid_name: "Respuesta no válida. Por favor, introduzca su nombre:"
+  select_operands: "Seleccione Operandos"
+  first_number: "Introduzca el primer número:"
+  second_number: "Introduzca el segundo número:"
+  valid_number: "¡Incorrecto! Introduzca un número válido."
+  select_operator: "Seleccionar operador"
+  valid_operator: "Opción no válida. Seleccione un operador válido."
+  results: "Resultados"
+  calculate_again: "¿Realizar otro cálculo? (Y para calcular de nuevo)"
+  goodbye: "¡Gracias por usar Calculadora! Adiós."
+  adding: "Adición de los dos números..."
+  subtracting: "Restar los dos números..."
+  multiplying: "Multiplicar los dos números..."
+  dividing: "Dividir los dos números..."
+  operator_prompt: "¿Qué operación le gustaría realizar?
+   \n1) Añadir
+   \n2) Restar
+   \n3) Multiplicar
+   \n4) Dividir"
+  calculation_result: "El resultado es"
+
