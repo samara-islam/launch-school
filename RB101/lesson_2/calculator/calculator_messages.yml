@@ -1,6 +1,7 @@
 en: 
   welcome: "Welcome to Calculator!"
   enter_name: "Please enter your name:"
+  hello: "Hello"
   valid_name: "Invalid response. Please enter your name:"
   select_operands: "Select Operands"
   first_number: "Enter the first number:"
@@ -21,10 +22,15 @@ en:
    \n3) Multiply
    \n4) Divide"
   calculation_result: "The result is"
+  divide_zero: "Cannot divide by zero! Enter a different operation."
+  calculate_again: "Calculate again? Enter 'Yes' or 'No'"
+  calculate_again_invalid: "Invalid response. Please enter 'Yes' or 'No'"
+  user: "User:"
 
 es: 
   welcome: "¡Bienvenido a Calculadora!"
   enter_name: "Por favor, introduzca su nombre"
+  hello: "Ola"
   valid_name: "Respuesta no válida. Por favor, introduzca su nombre:"
   select_operands: "Seleccione Operandos"
   first_number: "Introduzca el primer número:"
@@ -45,4 +51,7 @@ es:
    \n3) Multiplicar
    \n4) Dividir"
   calculation_result: "El resultado es"
-
+  divide_zero: "¡No se puede dividir por cero! Introduzca una operación diferente."
+  calculate_again: "Calcular de nuevo? Ingrese 'Yes' o 'No'"
+  calculate_again_invalid: "Respuesta no válida. Por favor, introduzca 'Sí' o 'No'"
+  user: "Usuario:"
