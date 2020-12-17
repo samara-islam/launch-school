@@ -1,0 +1,4 @@
+title: "Mortgage Calculator / Calculadora Hipotecaria\n"
+greeting: "Hello / ¡Hola!\n"
+language_prompt: "Please select a language:\n1) English\n2) Español\n"
+invalid_language_entry: "Invalid entry. Please enter a number corresponding to a language.\n   Entrada no válida. Introduce un número correspondiente a un idioma."
