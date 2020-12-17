@@ -31,7 +31,7 @@ def message(message, language)
 end
 
 def currency_prompt
-  print "$"
+  print '$'
 end
 
 # Display methods --->
@@ -92,6 +92,7 @@ def calculate_again?(language)
   loop do
     user_input = gets.chomp
     break if valid_input?(user_input)
+    
     prompt(message('invalid_calculate_again', language))
   end
   user_input.downcase.include?('y')
@@ -106,6 +107,7 @@ def retrieve_apr(language)
   loop do
     apr = gets.chomp
     break if valid_float?(apr)
+    
     prompt(message('invalid_apr_entry', language))
   end
   apr
@@ -118,6 +120,7 @@ def retrieve_loan_duration(language)
   loop do
     loan_duration = gets.chomp
     break if valid_number?(loan_duration)
+    
     prompt(message("invalid_duration_entry", language))
   end
   loan_duration
@@ -131,6 +134,7 @@ def retrieve_loan_amount(language)
     currency_prompt
     loan_amount = gets.chomp
     break if valid_integer?(loan_amount)
+    
     prompt(message('invalid_loan_entry', language))
   end
   loan_amount
@@ -142,6 +146,7 @@ def retrieve_language_select
   loop do
     language = gets.chomp
     break if valid_language?(language)
+    
     prompt(startup_message('invalid_language_entry'))
   end
   language
@@ -181,6 +186,7 @@ loop do
   # display results / ask to calculate again
   display_results(monthly_payment, language)
   break unless calculate_again?(language)
+  
 end
 
 display_goodbye(language)
