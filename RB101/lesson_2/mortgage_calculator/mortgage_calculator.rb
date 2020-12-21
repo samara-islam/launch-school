@@ -1,6 +1,7 @@
 require 'yaml'
 MESSAGES = YAML.load_file('mortgage_calculator_messages.yml')
 STARTUP = YAML.load_file('startup_messages.yml')
+VALID_NEW_GAME_ANSWERS = %w(yes ye y yees ys eys yess n no noo nn on)
 
 def clear_screen
   Gem.win_platform? ? system('cls') : system('clear')
@@ -70,20 +71,19 @@ def valid_language?(input)
 end
 
 def valid_integer?(integer)
-  integer.to_i.to_s == integer
+  integer.to_i.to_s && integer.to_i > 0
 end
 
-def valid_float?(float)
-  float.to_f.to_s == float
+def valid_apr?(number)
+  (number.to_f.to_s == number || number.to_i.to_s == number) && number.to_i > 0
 end
 
-def valid_number?(number)
-  number.to_i.to_s == number || number.to_f.to_s == number
+def valid_loan_amount?(number)
+  number.to_i.to_s == number && number.to_i > 0
 end
 
 def valid_input?(input)
-  ['yes', 'ye', 'y', 'yees', 'ys', 'eys', 'yess',
-   'n', 'no', 'noo', 'nn', 'on'].include?(input)
+  VALID_NEW_GAME_ANSWERS.include?(input.downcase)
 end
 
 def calculate_again?(language)
@@ -106,8 +106,12 @@ def retrieve_apr(language)
   apr = nil
   loop do
     apr = gets.chomp
+<<<<<<< HEAD
+    break if valid_apr?(apr)
+=======
     break if valid_float?(apr)
     
+>>>>>>> 503976590550ecef68cd4f5ec6cd7473d5c3f005
     prompt(message('invalid_apr_entry', language))
   end
   apr
@@ -119,8 +123,12 @@ def retrieve_loan_duration(language)
   loan_duration = nil
   loop do
     loan_duration = gets.chomp
+<<<<<<< HEAD
+    break if valid_integer?(loan_duration)
+=======
     break if valid_number?(loan_duration)
     
+>>>>>>> 503976590550ecef68cd4f5ec6cd7473d5c3f005
     prompt(message("invalid_duration_entry", language))
   end
   loan_duration
@@ -133,8 +141,12 @@ def retrieve_loan_amount(language)
   loop do
     currency_prompt
     loan_amount = gets.chomp
+<<<<<<< HEAD
+    break if valid_loan_amount?(loan_amount)
+=======
     break if valid_integer?(loan_amount)
     
+>>>>>>> 503976590550ecef68cd4f5ec6cd7473d5c3f005
     prompt(message('invalid_loan_entry', language))
   end
   loan_amount
