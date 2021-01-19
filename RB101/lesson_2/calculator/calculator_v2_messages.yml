@@ -1,0 +1,14 @@
+welcome: "Welcome to Calculator!"
+enter_name: "Please enter your name:"
+invalid_name: "Invalid entry! Please enter your name:"
+enter_number: "Please enter a number:"
+invalid_number: "Not a valid number! Please try again:"
+choose_operator: "What operation would you like to perform?
+   \n1) Add (+)
+   \n2) Subtract (-)
+   \n3) Multiply (*)
+   \n4) Divide (/)"
+invalid_operator: "Not a valid selection! Enter a number corresponding to an operator:"
+divide_by_zero: "Cannot divide by zero! Please select a different operation:"
+go_again: "Perform another calculation? Enter 'Yes' or 'No':"
+invalid_go_again: "Invalid entry! Please type in 'Yes' or 'No':" 
