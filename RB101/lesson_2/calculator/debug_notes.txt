@@ -1,0 +1,20 @@
+enter name
+-blanks
+-spaces
+
+enter number
+- chars
+- blanks
+- spaces
+
+operation
+- blank
+- space
+- chars
+- out of range
+
+go again?
+- caps
+- blank
+- space
+- char
