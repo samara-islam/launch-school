@@ -1,14 +1,47 @@
-welcome: "Welcome to Calculator!"
-enter_name: "Please enter your name:"
-invalid_name: "Invalid entry! Please enter your name:"
-enter_number: "Please enter a number:"
-invalid_number: "Not a valid number! Please try again:"
-choose_operator: "What operation would you like to perform?
-   \n1) Add (+)
-   \n2) Subtract (-)
-   \n3) Multiply (*)
-   \n4) Divide (/)"
-invalid_operator: "Not a valid selection! Enter a number corresponding to an operator:"
-divide_by_zero: "Cannot divide by zero! Please select a different operation:"
-go_again: "Perform another calculation? Enter 'Yes' or 'No':"
-invalid_go_again: "Invalid entry! Please type in 'Yes' or 'No':" 
+en: 
+  welcome: "Welcome to Calculator!"
+  enter_name: "Please enter your name:"
+  invalid_name: "Invalid entry! Please enter your name:"
+  enter_number: "Please enter a number:"
+  invalid_number: "Not a valid number! Please try again:"
+  choose_operator: "What operation would you like to perform?
+     \n1) Add (+)
+     \n2) Subtract (-)
+     \n3) Multiply (*)
+     \n4) Divide (/)"
+  invalid_operator: "Not a valid selection! Enter a number corresponding to an operator:"
+  divide_by_zero: "Cannot divide by zero! Please select a different operation:"
+  go_again: "Perform another calculation? Enter 'Yes' or 'No':"
+  invalid_go_again: "Invalid entry! Please type in 'Yes' or 'No':"
+  add: "Adding"
+  subtract: "Subtracting"
+  multiply: "Multiplying"
+  divide: "Dividing"
+  operation_message: "the two numbers..."
+  result_message: "The result is"
+  farewell_message: "Thanks for using Calculator,"
+  goodbye: "Goodbye."
+
+es: 
+  welcome: "es Welcome to Calculator!"
+  enter_name: "es Please enter your name:"
+  invalid_name: "es Invalid entry! Please enter your name:"
+  enter_number: "es Please enter a number:"
+  invalid_number: "es Not a valid number! Please try again:"
+  choose_operator: "es What operation would you like to perform?
+     \n1) es Add (+)
+     \n2) es Subtract (-)
+     \n3) es Multiply (*)
+     \n4) es Divide (/)"
+  invalid_operator: "es Not a valid selection! Enter a number corresponding to an operator:"
+  divide_by_zero: "es Cannot divide by zero! Please select a different operation:"
+  go_again: "es Perform another calculation? Enter 'Yes' or 'No':"
+  invalid_go_again: "es Invalid entry! Please type in 'Yes' or 'No':"
+  add: "es Adding"
+  subtract: "es Subtracting"
+  multiply: "es Multiplying"
+  divide: "es Dividing"
+  operation_message: "es the two numbers..."
+  result_message: "es The result is"
+  farewell_message: "es Thanks for using Calculator,"
+  goodbye: "es Goodbye."
