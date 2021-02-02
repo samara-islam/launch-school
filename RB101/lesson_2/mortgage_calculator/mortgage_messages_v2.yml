@@ -22,6 +22,6 @@ es:
   years: 'Años: '
   results: 'El pago mensual es de $ '
   go_again: "¿Realizar otro cálculo? Ingrese 'yes' o 'no'"
-  invalid_exit: "¡Entrada invalida! Escriba 'sí' o 'no'"
+  invalid_exit: "¡Entrada invalida! Escriba 'yes' o 'no'"
   goodbye: 'Adiós, '
 

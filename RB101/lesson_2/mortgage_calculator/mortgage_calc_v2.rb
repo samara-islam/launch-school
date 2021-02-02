@@ -20,7 +20,7 @@ def message_box(string)
 end
 
 # Supported languages: english ('en'), spanish ('es')
-def message(string, language = 'en')
+def message(string, language = 'es')
   MESSAGES[language][string]
 end
 
