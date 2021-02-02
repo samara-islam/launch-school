@@ -34,6 +34,7 @@ def valid_name?(string)
 end
 
 def retrieve_name
+  display_header
   prompt message 'enter_name'
   name = ''
   loop do
@@ -42,11 +43,6 @@ def retrieve_name
     puts message 'invalid_name'
   end
   name
-end
-
-def display_welcome
-  display_header
-  retrieve_name
 end
 
 def valid_number?(input)
@@ -148,6 +144,6 @@ def display_exit(input)
   puts input.to_s
 end
 
-name = display_welcome
+name = retrieve_name
 main_loop
 display_exit(name)
