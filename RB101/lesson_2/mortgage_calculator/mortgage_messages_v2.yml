@@ -1,0 +1,27 @@
+en:
+  title: 'Mortgage Calculator'
+  enter_name: 'Please enter your name:'
+  invalid_name: 'Invalid entry! Please enter your name:'
+  enter_loan: 'Enter the loan amount:'
+  enter_apr: 'Enter the annual percentage rate (APR):'
+  enter_duration: 'Enter the loan duration'
+  invalid_entry: 'Invalid entry! Please try again.'
+  years: 'Years: '
+  results: 'The monthly payment is $'
+  go_again: "Perform another calculation? Enter 'Yes' or 'No'"
+  invalid_exit: "Invalid entry! Please type in 'yes' or 'no'"
+  goodbye: 'Goodbye, '
+es:
+  title: 'Calculadora de hipoteca'
+  enter_name: 'Por favor, escriba su nombre:'
+  invalid_name: '¡Entrada invalida! Por favor, escriba su nombre:'
+  enter_loan: 'Ingrese el monto del préstamo:'
+  enter_apr: 'Ingrese la tasa de porcentaje anual (APR)'
+  enter_duration: 'Ingrese la duración del préstamo'
+  invalid_entry: '¡Entrada invalida! Inténtalo de nuevo.'
+  years: 'Años: '
+  results: 'El pago mensual es de $ '
+  go_again: "¿Realizar otro cálculo? Ingrese 'yes' o 'no'"
+  invalid_exit: "¡Entrada invalida! Escriba 'sí' o 'no'"
+  goodbye: 'Adiós, '
+
