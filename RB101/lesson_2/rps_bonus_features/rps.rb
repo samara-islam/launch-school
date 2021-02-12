@@ -1,77 +1,58 @@
-VALID_CHOICES = %w(rock paper scissors lizard spock)
+require 'yaml'
 
-def clear_screen
-	Gem.win_platform? ? system("cls") : system("clear")
+VALID_CHOICES = YAML.load_file('rps_choices.yml')
+VALID_PLAYERS = %w(rock paper scissors lizard spock)
+WINNER = {
+	'rock' => %w(scissors lizard),
+	'paper' =>%w(rock spock),
+	'scissors' => %w(paper lizard),
+	'lizard' => %w(spock paper),
+	'spock' => %w(scissors rock)
+}
+
+def prompt(string)
+  puts "=> #{string}"
 end
 
-def prompt(message)
-	puts "=> #{message}"
+def display_results(player, computer)
+	if WINNER[player].include?(computer)
+	prompt "you won"
+  elsif WINNER[computer].include?(player)
+	prompt "computer won"
+  else
+	prompt "it's a tie"
+  end
 end
 
-def message_box(message)
-	message.size.times { |_| print '*' }
-	puts "\n#{message}"
-	message.size.times { |_| print '*' }
-	puts "\n"
-end
+loop do
+	game_round = 0
+	score = { player: 0, cpu: 0 }
 
-def win?(first, second)
-	(first == 'scissors' && second == 'paper') ||
-	(first == 'paper' && second == 'rock') ||
-	(first == 'rock' && second == 'lizard') ||
-	(first == 'lizard' && second == 'spock') ||
-	(first == 'spock' && second == 'scissors') ||
-	(first == 'sciccors' && second == 'lizard') ||
-	(first == 'lizard' && second == 'paper') ||
-	(first == 'paper' && second == 'spock') ||
-	(first == 'spock' && second == 'rock') ||
-	(first == 'rock' && second == 'scissors')
-end
-
-def valid_player?(player)
-	VALID_CHOICES.include?(player.downcase)
-end
-
-def display_welcome
-	clear_screen
-	message_box("Welcome to Rock, Paper, Scissors, Lizard, Spock!")
-end
-
-def retrieve_computer_choice
-	VALID_CHOICES.sample
-end
-
-def retrieve_player_choice 
-	player = ''
 	loop do
-		prompt("Choose rock, paper, scissors, lizard, or Spock")
-		player = gets.chomp
-		break if valid_player?(player)
-		prompt("Invalid player! Please choose rock, paper, scissors, lizard, or Spock.")
-	end
-	player
-end
-
-def display_winner(player1, player2)
-	puts "Your choice: #{player1}\ncomputer choice: #{player2}"
-	if win?(player1, player2)
-		winner = "Player 1 wins!"
-	elsif win?(player2, player1)
-		winner = "Computer wins!"
-	else
-		winner = "it's a tie!"
-	end
-	puts winner
-end
+  	choice = ''
+  	loop do
+    	prompt("Choose one: #{VALID_CHOICES.join(', ')}")
+	  	choice = gets.chomp
 	
+	  	if VALID_CHOICES.include?(choice)
+		  	break
+	  	else
+		  	prompt "That's not valid choice."
+	  	end
+  	end
 
-display_welcome
-loop do 
-	player1 = retrieve_player_choice
-	player2 = retrieve_computer_choice
-	puts "#{player1} and #{player2}"
- display_winner(player1, player2)
+  	computer_choice = VALID_CHOICES.sample
+
+  	puts "you chose: #{choice}. Computer chose: #{computer_choice}"
+
+		display_results(choice, computer_choice)
+
+  
+
+		prompt "play again?"
+		answer = gets.chomp
+		break unless answer.downcase.start_with?('y')
+	end
 end
 
-# go_again = retrieve_go_again
-
+prompt 'thanks for playing! bye.'

@@ -1,0 +1,5 @@
+rock: ['rock','roc','rok','ro','r','1']
+paper: ['paper','pape','pap','pa','p','2']
+scissors: ['scissors','scissor','scisso','sciss', 'scis', 'sci', 'sc', '3']
+lizard: ['lizard','lizar','liza','liz','li','l', '4']
+spock: ['spock','spok','spoc','spo','sp', '5']
