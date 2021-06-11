@@ -1,30 +1,26 @@
-# Write a method that takes an Array of numbers 
-# and then returns the sum of the sums of each leading 
-# subsequence for that Array. 
-# You may assume that the Array always contains at least 
-# one number.
+# Write a method that takes an Array of numbers and then 
+# returns the sum of the sums of each leading subsequence for 
+# that Array. You may assume that the Array always contains at 
+# least one number.
 
-def sum_of_sums(num_array)
-  # initialize loop counter
-  counter = 0
+# initialize accumulator and total_sum variables
+# for every number in array, add number to accumulator
+#   add accumulator to total_sum
+# return total_sum 
 
-  # initialize accumulator and sum_total
+def sum_of_sums(arr)
   accumulator = 0
-  sum_total = 0
+  total = 0
 
-  # loop over array. 
-  loop do
-    accumulator = accumulator + num_array[counter]
-    sum_total = sum_total + accumulator
-    counter = counter + 1
-
-    break if counter == num_array.size
+  arr.each do |num|
+    accumulator += num
+    total += accumulator
   end
 
-  sum_total
+  total
 end
 
-p sum_of_sums([3, 5, 2])
-p sum_of_sums([1, 5, 7, 3])
-p sum_of_sums([4])
-p sum_of_sums([1, 2, 3, 4, 5])
+p sum_of_sums([3, 5, 2]) == (3) + (3 + 5) + (3 + 5 + 2) # -> (21)
+p sum_of_sums([1, 5, 7, 3]) == (1) + (1 + 5) + (1 + 5 + 7) + (1 + 5 + 7 + 3) # -> (36)
+p sum_of_sums([4]) == 4
+p sum_of_sums([1, 2, 3, 4, 5]) == 35
